@@ -88,38 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
     
-    // Mobile menu toggle (if needed for future expansion)
-    function initMobileMenu() {
-        const header = document.querySelector('.header');
-        const nav = document.querySelector('.nav');
-        
-        // Add mobile menu button if screen is small
-        if (window.innerWidth <= 768 && !document.querySelector('.mobile-menu-btn')) {
-            const mobileBtn = document.createElement('button');
-            mobileBtn.className = 'mobile-menu-btn';
-            mobileBtn.innerHTML = '☰';
-            mobileBtn.style.cssText = `
-                background: none;
-                border: none;
-                color: white;
-                font-size: 1.5rem;
-                cursor: pointer;
-                display: none;
-            `;
-            
-            header.querySelector('.container').appendChild(mobileBtn);
-            
-            mobileBtn.addEventListener('click', function() {
-                nav.classList.toggle('mobile-open');
-            });
-        }
-    }
-    
-    // Initialize mobile menu
-    initMobileMenu();
-    
-    // Reinitialize on window resize
-    window.addEventListener('resize', initMobileMenu);
+
 });
 
 // Add CSS for active navigation state
@@ -131,16 +100,6 @@ style.textContent = `
     
     .nav-link.active::after {
         width: 100% !important;
-    }
-    
-    @media (max-width: 768px) {
-        .nav.mobile-open {
-            display: flex !important;
-        }
-        
-        .mobile-menu-btn {
-            display: block !important;
-        }
     }
 `;
 document.head.appendChild(style);
