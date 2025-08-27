@@ -245,99 +245,29 @@ body {
     transform: translateY(-2px);
 }
 
-/* YouTube Section */
-.youtube-section {
-    padding: 5rem 0;
-    background: #f8fafc;
-}
-
-.youtube-content {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.youtube-card {
-    background: white;
-    border-radius: 20px;
-    padding: 3rem;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-    display: flex;
-    gap: 3rem;
-    align-items: center;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.youtube-icon {
-    flex-shrink: 0;
-}
-
-.youtube-logo {
-    width: 120px;
-    height: 120px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(255, 0, 0, 0.2);
+/* YouTube Section Styling */
+#youtube .app-icon-img {
     background: #ff0000;
+    color: white;
     padding: 20px;
 }
 
-.youtube-details {
-    flex: 1;
-}
-
-.youtube-title {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: #2d3748;
-}
-
-.youtube-description {
-    font-size: 1.1rem;
-    color: #4a5568;
-    margin-bottom: 1.5rem;
-    line-height: 1.7;
-}
-
-.youtube-features {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 2rem;
-}
-
-.youtube-tag {
+#youtube .feature-tag {
     background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
     color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 25px;
-    font-size: 0.9rem;
-    font-weight: 500;
 }
 
-.youtube-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
+#youtube .download-btn {
     background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
-    color: white;
-    text-decoration: none;
-    padding: 1rem 2rem;
-    border-radius: 50px;
-    font-weight: 600;
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
     box-shadow: 0 10px 30px rgba(255, 0, 0, 0.3);
 }
 
-.youtube-btn:hover {
-    transform: translateY(-2px);
+#youtube .download-btn:hover {
     box-shadow: 0 15px 40px rgba(255, 0, 0, 0.4);
 }
 
-.youtube-icon {
-    width: 24px;
-    height: 24px;
+#youtube .play-store-icon {
+    color: white;
 }
 
 /* Footer */
