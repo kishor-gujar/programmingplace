@@ -422,30 +422,69 @@ body {
 .skills h3 {
     font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     color: #2d3748;
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.skill-category {
+    background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.skill-category:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border-color: #cbd5e0;
+}
+
+.skill-category-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #2d5c88;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #e2e8f0;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
 }
 
 .skill-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.75rem;
+    gap: 0.5rem;
 }
 
 .skill-tag {
-    background: #edf2f7;
+    background: linear-gradient(135deg, #ffffff 0%, #f7fafc 100%);
     color: #2d3748;
-    padding: 0.75rem 1.5rem;
-    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
     font-weight: 500;
-    border: 2px solid transparent;
+    font-size: 0.9rem;
+    border: 1px solid #e2e8f0;
     transition: all 0.3s ease;
+    display: inline-block;
+    cursor: default;
 }
 
 .skill-tag:hover {
     background: linear-gradient(135deg, #2d5c88 0%, #4a90e2 100%);
     color: white;
     transform: translateY(-2px);
+    border-color: transparent;
+    box-shadow: 0 4px 12px rgba(45, 92, 136, 0.3);
 }
 
 /* YouTube Section Styling */
@@ -573,6 +612,15 @@ body {
     
     .youtube-features {
         justify-content: center;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .skill-category {
+        padding: 1.25rem;
     }
     
     .skill-tags {
